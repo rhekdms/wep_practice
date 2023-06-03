@@ -1,7 +1,5 @@
 #night_day {
-    position: absolute;
-    right: 0;
-    top: 0;
+    float: right;
     width:50px;
     height: 20px;
     border: 1px solid rgb(0, 0, 0);
@@ -32,8 +30,17 @@ input {
 }
 .main_screan{
     border-top: solid black;
+    padding-left: 20px;
 }
 body{
-    background-color: white;
+    background-color: rgb(193, 193, 193);
     color: black;
+    margin: 0;
+}
+.Body {
+    max-width: 800px;
+    margin: auto;
+    background-color: white;
+    border: solid black;
+    min-height: 99.3vh;
 }

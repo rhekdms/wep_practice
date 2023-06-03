@@ -5,39 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WEB - retry</title>
-    <style>
-        .top_body {
-            border-bottom: solid rgb(0, 0, 0);
-        }
-    </style>
+    <link rel="stylesheet" href="whitemode.css">
 </head>
 <body>
-    <div class="top_body">
+    <div class="Body">
+        <input id='night_day' type="button" value='night' onclick="whiteblack()">
         <h1><a href="new_index.html">WEB</a></h1>
-        <input type="button" value="    HTML   " onclick="location.href='new_HTML.html'">
-        <input type="button" value="    CSS    " onclick="location.href='new_CSS.html'">
-        <input type="button" value="JAVA SCRIPT" onclick="location.href='new_JS.html'">
-        <input id = 'night_day' type="button" value="night" onclick="
-        if(document.querySelector('#night_day').value==='night'){
-            document.querySelector('body').style.backgroundColor='black';
-            document.querySelector('body').style.color='white';
-            document.querySelector('#night_day').value='day';
-        } else {
-            document.querySelector('body').style.backgroundColor='white';
-            document.querySelector('body').style.color='black';
-            document.querySelector('#night_day').value='night';
-        }
-        ">
-    </div>
-    <div class="main_screan">
-        <h2>화면 정보</h2>
-        <p>
-            qq
-        </p>
-        <h2>화면 구성</h2>
-        <p>
-            qq
-        </p>
+        <div class="config">
+            <input type="button" value="HTML" onclick="location.href='new_HTML.html'">
+            <input style="background-color:grey; border-color:grey" type="button" value="CSS" onclick="location.href='new_CSS.html'">
+            <input type="button" value="JAVA SCRIPT" onclick="location.href='new_JS.html'">
+        </div>
+        <div class="main_screan">
+            <h2>화면 정보</h2>
+            <p>
+                코드
+            </p>
+            <p>
+                설명
+            </p>
+            <h2>화면 구성</h2>
+            <p>
+                디자인
+            </p>
+            <p>
+                설명
+            </p>
+        </div>
     </div>
 </body>
+<script>
+    var target = document.querySelector('link');
+    function whiteblack(){
+        if (document.querySelector('#night_day').value==='day'){
+            target.href='whitemode.css';
+            document.querySelector('#night_day').value='night';
+        }else{
+            target.href='blackmode.css';
+            document.querySelector('#night_day').value='day';
+        }
+    }
+</script>
 </html>

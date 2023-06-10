@@ -1,0 +1,42 @@
+body{
+    margin: 0;
+}
+
+#ststem_butten{
+    background-color: rgba(0, 0, 0, 0);
+    border: rgba(0, 0, 0, 0);
+    cursor: pointer;
+}
+.All_system{
+    display: none;
+}
+.color_system{
+    display: none;
+}
+.screen_system{
+    display: none;
+}
+.back_picture_system{
+    display: none;
+}
+#screen_board_1{
+    opacity: 0.3;
+}
+#screen_board_1:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+#screen_board_2{
+    opacity: 0.3;
+}
+#screen_board_2:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+#screen_board_3{
+    opacity: 0.3;
+}
+#screen_board_3:hover{
+    opacity: 1;
+    cursor: pointer;
+}

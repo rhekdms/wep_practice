@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>WEB1 - Welcome</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <script src="nightday.js"></script>
+    </head>
+    <body>
+        <input type="button" value="night" onclick="
+        document.querySelector('body').style.backgroundColor='black';
+        document.querySelector('body').style.color='white';
+        ">
+        <input type="button" value="day" onclick="
+        document.querySelector('body').style.backgroundColor='white';
+        document.querySelector('body').style.color='black';
+        ">
+        <h1><a href="index.html">WEB</a></h1>
+        <input type="button" value="night" onclick="
+                nightdayhandler(this);">
+        <div id="grid">
+            <div id="mencu">
+                <ol>
+                    <li><a href="1.html">HTML</a></li>
+                    <li><a href="2.html">CSS</a></li>
+                    <li><a href="3.html">JavaScript</a></li>
+                </ol>
+            </div>
+            <div id="article">
+                <h2>WEP</h2>
+                <h3 style="display: inline;">
+                    web과 internet은 다름<br>
+                </h3>
+                <p style="display: inline;">
+                    web은 internet안의 부분<br>
+                    <br>
+                </p>
+                <h3 style="display: inline;">
+                    1960년, 인터넷 등장<br>
+                </h3>
+                <p style="display: inline;">
+                    1960년, 핵이 화두<br>
+                    미국이 핵 공격을 당했을 때 어떤 일이 생길 것인지 시뮬레이션을 해봄<br>
+                    당시 중앙집중적이던 통신시스템은 핵공격을 당하면 통신이 마비되는 상황<br>
+                    핵공격에도 견딜 수 있는 통신 시스템으로 인터넷이 탄생<br>
+                    인터넷은 각각의 통신장치들이 전화국 역할을 수행하기에 하나의 통신장치가 사라진다해도 영향이 없음<br>
+                    <br>
+                </p>
+                <h3 style="display: inline;">
+                    1990년, 웹 등장<br>
+                </h3>
+                <p style="display: inline;">
+                    스위스에서 처음 생겨났음<br>
+                    1980년, 스위스 제네바 유럽 입자 물리 연구소에 '팀 버너스 리'가 비정규직으로 취직<br>
+                    프로그래머로 취직하여 'Enquire' 프로그램을 만들었음(지금은 존재하지 않음)<br>
+                    10년동안 연구소를 들어갔다 나왔다하며 'Enquire'와 같은 웹의 전신이 되는 프로그램을 만들었음<br>
+                    1990년, 연구소에 인터넷이 들어옴<br>
+                    10월, 웹페이지를 만드는 편집기를 만들었음<br>
+                    11월, 세계 최초의 웹 브라우저를 만들었음<br>
+                    12월 24일, 팀 버너스 리와 그의 동료는 웹서버라는 프로그램을 만들고, 설치되어있는 컴퓨터에 
+                    '<a href="http://info.cern.ch/" taget="_blank">info.cern.ch</a>'라는 주소를 부여<br>
+                    <br>
+                </p>
+                <h3 style="display: inline;">
+                    인터넷이 동작하는 가장 기본적인 원리<br>
+                </h3>
+                <p style="display: inline;">
+                    컴퓨터는 최소 두대가 필요함<br>
+                    한쪽은 웹 브라우저, 다른 한쪽은 웹 서버가 깔려있음<br>
+                    웹 서버는 주소를 가지고 있으며, 내부에 파일이 저장되어있음<br>
+                    웹 브라우저에 '주소/파일명'을 검색하면 전기적 신호를 웹 서버가 깔려있는 컴퓨터에 보냄<br>
+                    웹 서버 프로그램이 하드디스크에서 파일을 찾아내 웹 브라우저가 있는 컴퓨터로 보내줌<br>
+                    파일 내부에 있는 코드를 웹 브라우저가 읽어서 웹 동작<br>
+                    정보를 요청하는 쪽은 클라이언트, 응답하는 쪽을 서버라 함<br>
+                    내 컴퓨터의 문서를 볼 수 있게 하려면 웹서버를 직접 깔거나 업체에 맡길 수 있음<br>
+                    <br>
+                </p>
+                <h3 style="display: inline;">
+                    웹서버 운영<br>
+                </h3>
+                <p style="display: inline;">
+                    http://127.0.0.1:5500/index.html<br>
+                    통신규약//ip 주소:서버 포트번호/파일 이름<br>
+                    <br>
+                </p>
+            </div>
+        </div>
+        <input type="button" value="night" onclick="
+                nightdayhandler(this);">
+    </body>
+</html>

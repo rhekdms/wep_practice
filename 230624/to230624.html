@@ -8,52 +8,61 @@
     <script src="All_open_close.js"></script>
 </head>
 <body>
-    <button id="ststem_butten" value="close"><img src="cycle.png" width="40px" onclick="A_O_C('.All_system');
+    <div class="top_cover">
+        <button id="ststem_butten" value="close" onclick="A_O_C('.All_system');
         document.querySelector('.color_system').style.display='none';
         document.querySelector('.screen_system').style.display='none';
-        document.querySelector('.back_picture_system').style.display='none';"></button>
-    <div class="All_system">
-        <h2 onclick="A_O_C('.color_system')" 
-        oncontextmenu="return false" 
-        ondragstart="return false" 
-        onselectstart="return false">Screen_Color</h2>
-        <div class="color_system" 
-        oncontextmenu="return false" 
-        ondragstart="return false" 
-        onselectstart="return false">
-            <p>글씨색</p>
-            <input type="color">
-            <p>화면색</p>
-            <input type="color">
+        document.querySelector('.back_picture_system').style.display='none';">
+        <img src="cycle.png" width="40px"></button>
+        <div class="All_system">
+            <h2 value="close" onclick="A_O_C('.color_system')" 
+            oncontextmenu="return false" 
+            ondragstart="return false" 
+            onselectstart="return false">Screen_Color</h2>
+            <div class="color_system" 
+            oncontextmenu="return false" 
+            ondragstart="return false" 
+            onselectstart="return false">
+                <p style="width: 90px; margin-right:0; display:inline;">Font Color :</p>
+                <input type="color">
+                <p style="width: 105px; margin-right:0; display:inline;">screen Color :</p>
+                <input type="color">
+            </div>
+            <h2 value="close" onclick="A_O_C('.screen_system')"
+            oncontextmenu="return false" 
+            ondragstart="return false" 
+            onselectstart="return false">화면 분할</h2>
+            <div class="screen_system"
+            oncontextmenu="return false" 
+            ondragstart="return false" 
+            onselectstart="return false">
+                <button id="screen_board_1" onclick=""><img src="Color.jpg" width="80px"></button>
+                <button id="screen_board_2" onclick=""><img src="Color.jpg" width="80px"></button>
+                <button id="screen_board_3" onclick=""><img src="Color.jpg" width="80px"></button>
+            </div>
+            <h2 value="close" onclick="A_O_C('.back_picture_system')"
+            oncontextmenu="return false" 
+            ondragstart="return false" 
+            onselectstart="return false">배너 사진</h2>
+            <div class="back_picture_system">
+                <p>1920*163px 사이즈를 지켜주세요!</p>
+                <input id="file_collecter" type="file">
+                <button ><p>Update</p></button>
+            </div>
         </div>
-        <h2 onclick="A_O_C('.screen_system')"
-        oncontextmenu="return false" 
-        ondragstart="return false" 
-        onselectstart="return false">화면 분할</h2>
-        <div class="screen_system"
-        oncontextmenu="return false" 
-        ondragstart="return false" 
-        onselectstart="return false">
-            <button id="screen_board_1" onclick=""><img src="Color.jpg" width="80px"></button>
-            <button id="screen_board_2" onclick=""><img src="Color.jpg" width="80px"></button>
-            <button id="screen_board_3" onclick=""><img src="Color.jpg" width="80px"></button>
-        </div>
-        <h2 onclick="A_O_C('.back_picture_system')">배너 사진</h2>
-        <div class="back_picture_system">
-            <p>사진을 올려주세요</p>
-            <input type="file">
-            <button ><p>Update</p></button>
-        </div>
+        <h1>Photo Diary</h1>
     </div>
-
-    <img src="" width="100%">
-    <h1>Photo Diary</h1>
-
-    <button><p>M<br>e<br>n<br>u</p></button>
+    <button id="menu_butten" value="close" onclick="A_O_C('.All_menu');
+        document.querySelector('.remember').style.display='none';">
+    <p>M<br>e<br>n<br>u</p></button>
     <div class="All_menu">
         <p>달력</p>
         <p>일기쓰기</p>
-        <p>지난 날 돌아보기</p>
+        <p value="close" onclick="A_O_C('.remember')"
+        oncontextmenu="return false" 
+        ondragstart="return false" 
+        onselectstart="return false">
+        지난 날 돌아보기</p>
         <div class="remember">
             <p>사진만</p>
             <p>내용만</p>

@@ -1,14 +1,47 @@
 body{
     margin: 0;
+    color: blueviolet;
+    background-color: rgb(255, 235, 245);
 }
-
+input{
+    border: 2px solid blueviolet;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+button{
+    border: 2px solid blueviolet;
+    border-radius: 10px;
+    background-color: white;
+    color: blueviolet;
+}
+h1{
+    text-align: center;
+    font-size: 50px;
+    margin: 0;
+    padding-bottom: 50px;
+    border-bottom: solid 2px blueviolet;
+}
+.top_cover{
+    background-image: url(cover.jpg);
+    background-repeat: no-repeat;
+    background-size:  1920px 163px;
+    background-position: center;
+}
 #ststem_butten{
     background-color: rgba(0, 0, 0, 0);
     border: rgba(0, 0, 0, 0);
     cursor: pointer;
 }
 .All_system{
+    position: absolute;
+    left: 40px;
+    top: 33px;
     display: none;
+    border: solid blueviolet;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 30px;
+    border-top-left-radius: 0;
 }
 .color_system{
     display: none;
@@ -20,23 +53,38 @@ body{
     display: none;
 }
 #screen_board_1{
-    opacity: 0.3;
+    opacity: 0.5;
 }
 #screen_board_1:hover{
     opacity: 1;
     cursor: pointer;
 }
 #screen_board_2{
-    opacity: 0.3;
+    opacity: 0.5;
 }
 #screen_board_2:hover{
     opacity: 1;
     cursor: pointer;
 }
 #screen_board_3{
-    opacity: 0.3;
+    opacity: 0.5;
 }
 #screen_board_3:hover{
     opacity: 1;
     cursor: pointer;
+}
+.All_menu{
+    display: none;
+    border: solid 2px blueviolet;
+}
+.remember{
+    display: none;
+}
+#file_collecter{
+    width: 240px;
+}
+#menu_butten{
+    width: 25px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
 }

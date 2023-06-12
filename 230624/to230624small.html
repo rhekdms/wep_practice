@@ -15,7 +15,7 @@
         document.querySelector('.back_picture_system').style.display='none';">
         <img src="cycle.png" width="40px"></button>
         <div class="All_system">
-            <h2 value="close" onclick="A_O_C('.color_system')" 
+            <h2 id="screen_color_button" value="close" onclick="A_O_C('.color_system')" 
             oncontextmenu="return false" 
             ondragstart="return false" 
             onselectstart="return false">Screen_Color</h2>
@@ -28,7 +28,7 @@
                 <p style="width: 105px; margin-right:0; display:inline;">screen Color :</p>
                 <input type="color">
             </div>
-            <h2 value="close" onclick="A_O_C('.screen_system')"
+            <h2 id="screen_split_button" value="close" onclick="A_O_C('.screen_system')"
             oncontextmenu="return false" 
             ondragstart="return false" 
             onselectstart="return false">화면 분할</h2>
@@ -40,7 +40,7 @@
                 <button id="screen_board_2" onclick=""><img src="Color.jpg" width="80px"></button>
                 <button id="screen_board_3" onclick=""><img src="Color.jpg" width="80px"></button>
             </div>
-            <h2 value="close" onclick="A_O_C('.back_picture_system')"
+            <h2 id="picture_change_button" value="close" onclick="A_O_C('.back_picture_system')"
             oncontextmenu="return false" 
             ondragstart="return false" 
             onselectstart="return false">배너 사진</h2>
@@ -52,25 +52,28 @@
         </div>
         <h1>Photo Diary</h1>
     </div>
-    <button id="menu_button" value="close" onclick="A_O_C('.All_menu');
-        document.querySelector('.remember').style.display='none';">
-    <p>M<br>e<br>n<br>u</p></button>
     <div class="All_menu">
-        <p>달력</p>
-        <p>일기쓰기</p>
-        <p value="close" onclick="A_O_C('.remember')"
+        <p id="Calendar">달력</p>
+        <p id="Diary">일기쓰기</p>
+        <p id="Remember_button" value="close" onclick="A_O_C('.remember')"
         oncontextmenu="return false" 
         ondragstart="return false" 
         onselectstart="return false">
         지난 날 돌아보기</p>
         <div class="remember">
-            <p>사진만</p>
-            <p>내용만</p>
-            <p>사진과 내용</p>
+            <p id="only_picture">사진만</p>
+            <p id="only_string">내용만</p>
+            <p id="all_see">사진과 내용</p>
         </div>
-        <p>memo</p>
-        <p>To Do List</p>
+        <p id="Memo">memo</p>
+        <p id="Dolist">To Do List</p>
     </div>
+    <button id="menu_button_small" value="close" onclick="A_O_C('.All_menu');
+        document.querySelector('.remember').style.display='none';">
+    <p>Menu</p></button>
+    <button id="menu_button_big" value="close" onclick="A_O_C('.All_menu');
+        document.querySelector('.remember').style.display='none';">
+    <p>M<br>e<br>n<br>u</p></button>
 
     <div class="First_main_screen">
         <input type="date"><!-- 달력 -->

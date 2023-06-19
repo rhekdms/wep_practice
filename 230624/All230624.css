@@ -8,6 +8,9 @@ input{
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
 }
+p{
+    margin: 0;
+}
 button{
     border: 2px solid blueviolet;
     border-radius: 10px;
@@ -27,7 +30,7 @@ h1{
     background-size:  1920px 163px;
     background-position: center;
 }
-#ststem_butten{
+#ststem_button{
     background-color: rgba(0, 0, 0, 0);
     border: rgba(0, 0, 0, 0);
     cursor: pointer;
@@ -74,8 +77,12 @@ h1{
     cursor: pointer;
 }
 .All_menu{
+    text-align: center;
     display: none;
-    border: solid 2px blueviolet;
+    border-right: solid blueviolet 2px;
+    border-left: solid blueviolet 2px;
+    background-color: white;
+    width: 200px;
 }
 .remember{
     display: none;
@@ -83,8 +90,43 @@ h1{
 #file_collecter{
     width: 240px;
 }
-#menu_butten{
-    width: 25px;
+#menu_button_small{
+    display: none;
+}
+#menu_button_big{
+    display: inline;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 202px 30px 1fr;
+    height: 82.3vh;
+}
+#screen_color_button, #screen_split_button, #picture_change_button{
+    border-top: dashed 2px blueviolet;
+    margin: 0;
+}
+#Calendar, #Diary, #Memo, #Dolist, #Remember_button{
+    border-bottom: dashed 2px blueviolet;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-size: 17px;
+    padding: 3px;
+}
+#only_picture, #only_string{
+    border-bottom: dotted 2px blueviolet;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-size: 15px;
+    padding: 1px;
+    background-color: rgba(235, 215, 255, 0.6);
+}
+#all_see{
+    border-bottom: dashed 2px blueviolet;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-size: 15px;
+    padding: 1px;
+    background-color: rgba(235, 215, 255, 0.6)
 }

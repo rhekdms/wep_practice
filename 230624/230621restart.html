@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" style="width: 100%;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to my space!!</title>
+    <link rel="stylesheet" href="230621re.css">
+    <script src="230621res.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+    crossorigin="anonymous"></script>
+</head>
+<body>
+    <button id="setup_button" onclick="SETUP();"><img src="cycle.png" width="40px"></button>
+    <div class="setup">
+        <p id="SetUp">Set-Up</p>
+        <p>Screen-Color</p>
+        <p>Screen-Position</p>
+        <div class="position_img">
+            <button><img src="z" width="80px"></button>
+            <button><img src="" width="80px"></button>
+            <button><img src="" width="80px"></button>
+        </div>
+        <p>Banner-Picture</p>
+        <p id="picture_size">*** We recommend 1960*140px for the size of the picture. ***</p>
+        <input type="file">
+        <button>Update</button>
+    </div>
+    <h1>Photo Diary</h1>
+    <div class="menu_s">
+        <p id="Write">Write</p>
+        <p id="Memory" onclick="MEMORY()">Memory</p>
+        <div class="Memory">
+            <p id="OnlyPicture">Only-Picture</p>
+            <p id="OnlyWriting">Only-Writing</p>
+            <p id="Picture_n_Writing">Picture & Writing</p>
+        </div>
+        <p id="Remember" ondblclick="REMEMBER()">Remember</p>
+        <div class="Remember">
+            <p id="Memo">Memo</p>
+            <p id="To_Do">To Do</p>
+        </div>
+    </div>
+    <button id="Menu" onclick="MENU()">Menu</button>
+    <div class="screen">
+        <div class="grid">
+            <div class="Calender">
+                calendar
+            </div>
+            <div class="Memo">
+                memo
+            </div>
+            <div class="To_Do">
+                to do
+            </div>
+        </div>
+        <div class="Write">
+            write
+        </div>
+        <div class="Picture_n_writing">
+            <div class="OnlyPicture">
+                picture
+            </div>
+            <div class="OnlyWriting">
+                writing
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+
+</script>
+</html>

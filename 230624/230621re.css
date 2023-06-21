@@ -1,0 +1,185 @@
+body{
+    position: relative;
+    margin: 0;
+    color: rgb(140, 45, 225);
+    background-color: rgb(245, 230, 245);
+}
+#setup_button{
+    position: relative;
+    z-index: 11;
+    background-color: rgba(0,0,0,0);
+    border: rgba(0,0,0,0);
+    cursor: pointer;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.setup{
+    position: relative;
+    z-index: 11;
+    border: rgb(105, 20, 180) solid 2px;
+    border-radius: 30px;
+    border-top-left-radius: 0;
+    position: absolute;
+    left: 36px;
+    top: 33px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.755);
+    padding-bottom: 18px;
+    display: none;
+}
+.setup button{
+    border: rgb(105, 20, 180) solid 1px;
+    background-color: white;
+    border-radius: 10px;
+}
+.setup p{
+    font-size: 20px;
+    font-weight: 500;
+    border-top: dashed 2px;
+}
+#SetUp{
+    border: none;
+    font-size: 25px;
+    font-weight: 700;
+}
+#SetUp button{
+    font-size: 25px;
+    font-weight: 1000;
+    border: none;
+    background-color: rgb(255, 255, 255);
+}
+.position_img{
+    margin-bottom: 5px;
+}
+#picture_size{
+    font-size: 12px;
+    padding-bottom: 5px;
+    border: none;
+}
+h1{
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    font-size: 45px;
+    margin: 0;
+    width: 100%;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    border-bottom: rgb(105, 20, 180) solid 2px;
+    background-image: url(cover.jpg);
+    background-size: 1920px 140px;
+    background-position: center;
+    margin-bottom: -15px;
+}
+p{
+    margin: 0;
+    padding: 3px;
+}
+.menu_s{
+    display: none;
+}
+.menu_s p{
+    background-color: white;
+    border-bottom: rgb(105, 20, 180) solid 2px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    text-align: center;
+    padding-top: 15px;
+    margin-bottom: -15px;
+    font-size: 18px;
+    font-weight: 600;
+    position: relative;
+}
+#Write{
+    z-index: 8;
+}
+#Memory{
+    z-index: 7;
+}
+#OnlyPicture{
+    z-index: 6;
+}
+#OnlyWriting{
+    z-index: 5;
+}
+#Picture_n_Writing{
+    z-index: 4;
+}
+#Remember{
+    z-index: 3;
+}
+#Memo{
+    z-index: 2;
+}
+#To_Do{
+    z-index: 1;
+}
+#Menu{
+    position: relative;
+    z-index: 0;
+    padding-top: 18px;
+    background-color: #e7d4ff;
+    border: none;
+    border-bottom: rgb(105, 20, 180) solid 2px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    font-size: 20px;
+    font-weight: 700;
+    color:rgb(140, 45, 225);
+    width: 100%;
+}
+.Memory{
+    display: none;
+}
+.Remember{
+    display: none;
+}
+.Memory p, .Remember p{
+    font-size: 15px;
+    font-weight: 500;
+    border-bottom: #b088ec solid 2px;
+    background-color: #f9f3ff;
+}
+.screen{
+    margin-top: 10px;
+}
+.Calender{
+    display: inline;
+    border: solid rgb(105, 20, 180) 2px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 2px;
+    padding: 5px;
+}
+.Memo{
+    display: inline;
+    border: solid rgb(105, 20, 180) 2px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 2px;
+    padding: 5px;
+}
+.To_Do{
+    display: inline;
+    border: solid rgb(105, 20, 180) 2px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 2px;
+    padding: 5px;
+}
+.Write{
+    display: none;
+}
+.Picture_n_writing{
+    display: none;
+}
+.OnlyPicture{
+    display: none;
+}
+.OnlyWriting{
+    display: none;
+}
+
+/* havor */

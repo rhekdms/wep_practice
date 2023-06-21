@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head style="width: 100%;">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to my space!!</title>
@@ -27,6 +27,7 @@
                 <input type="color">
                 <p style="width: 105px; margin-right:0; display:inline;">screen Color :</p>
                 <input type="color">
+                <button><p>Update</p></button>
             </div>
             <h2 id="screen_split_button" value="close" onclick="A_O_C('.screen_system')"
             oncontextmenu="return false" 
@@ -39,6 +40,7 @@
                 <button id="screen_board_1" onclick=""><img src="Color.jpg" width="80px"></button>
                 <button id="screen_board_2" onclick=""><img src="Color.jpg" width="80px"></button>
                 <button id="screen_board_3" onclick=""><img src="Color.jpg" width="80px"></button>
+                <button><p>Update</p></button>
             </div>
             <h2 id="picture_change_button" value="close" onclick="A_O_C('.back_picture_system')"
             oncontextmenu="return false" 
@@ -47,7 +49,7 @@
             <div class="back_picture_system">
                 <p>1920*163px 사이즈를 지켜주세요!</p>
                 <input id="file_collecter" type="file">
-                <button ><p>Update</p></button>
+                <button><p>Update</p></button>
             </div>
         </div>
         <h1>Photo Diary</h1>
@@ -76,9 +78,28 @@
     <p>M<br>e<br>n<br>u</p></button>
 
     <div class="First_main_screen">
-        <input type="date"><!-- 달력 -->
-        <input type="text"><!-- memo -->
-        <input type=""><!-- todolist -->
+        <div>
+            <div>
+                달력
+            </div>
+            <div>
+                메모
+            </div>
+            <div>
+                할 일
+            </div>
+        </div>
+        <div>
+            일기쓰기
+        </div>
+        <div>
+            <div>
+                사진만
+            </div>
+            <div>
+                내용만
+            </div>
+        </div>
     </div>
 </body>
 <script>

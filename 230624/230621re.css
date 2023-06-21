@@ -12,8 +12,8 @@ body{
     cursor: pointer;
     padding: 0;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 2px;
+    left: 2px;
 }
 .setup{
     position: relative;
@@ -33,6 +33,7 @@ body{
     border: rgb(105, 20, 180) solid 1px;
     background-color: white;
     border-radius: 10px;
+    color: rgb(105, 20, 180);
 }
 .setup p{
     font-size: 20px;
@@ -40,15 +41,21 @@ body{
     border-top: dashed 2px;
 }
 #SetUp{
+    display: inline;
     border: none;
     font-size: 25px;
     font-weight: 700;
 }
-#SetUp button{
-    font-size: 25px;
-    font-weight: 1000;
-    border: none;
-    background-color: rgb(255, 255, 255);
+.setup button{
+    background-color: rgba(255, 255, 255, 0.5);
+}
+#Set_update{
+    height: 20px;
+    margin: auto;
+}
+.setup_grid{
+    display: grid;
+    grid-template-columns: 1fr 60px;
 }
 .position_img{
     margin-bottom: 5px;
@@ -172,9 +179,6 @@ p{
 .Write{
     display: none;
 }
-.Picture_n_writing{
-    display: none;
-}
 .OnlyPicture{
     display: none;
 }
@@ -182,4 +186,36 @@ p{
     display: none;
 }
 
-/* havor */
+/* hover */
+#Write:hover{
+    padding-top: 20px;
+    margin-bottom: -20px;
+}
+#Memory:hover{
+    padding-top: 20px;
+    margin-bottom: -20px;
+}
+#OnlyPicture:hover{
+    padding-top: 20px;
+    margin-bottom: -20px;
+}
+#OnlyWriting:hover{
+    padding-top: 20px;
+    margin-bottom: -20px;
+}
+#Picture_n_Writing:hover{
+    padding-top: 20px;
+    margin-bottom: -20px;
+}
+#Remember:hover{
+    padding-top: 20px;
+    margin-bottom: -20px;
+}
+#Memo:hover{
+    padding-top: 20px;
+    margin-bottom: -20px;
+}
+#To_Do:hover{
+    padding-top: 20px;
+    margin-bottom: -20px;
+}

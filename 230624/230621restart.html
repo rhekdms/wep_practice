@@ -11,20 +11,27 @@
     crossorigin="anonymous"></script>
 </head>
 <body>
-    <button id="setup_button" onclick="SETUP();"><img src="cycle.png" width="40px"></button>
+    <button id="setup_button" onclick="SETUP();" 
+    oncontextmenu="return false" 
+    ondragstart="return false" >
+    <img src="cycle.png" width="40px"></button>
     <div class="setup">
-        <p id="SetUp">Set-Up</p>
-        <p>Screen-Color</p>
-        <p>Screen-Position</p>
-        <div class="position_img">
-            <button><img src="z" width="80px"></button>
-            <button><img src="" width="80px"></button>
-            <button><img src="" width="80px"></button>
+        <div class="setup_grid">
+            <p id="SetUp">Set-Up</p>
+            <button id="Set_update">Update</button>
         </div>
-        <p>Banner-Picture</p>
-        <p id="picture_size">*** We recommend 1960*140px for the size of the picture. ***</p>
-        <input type="file">
-        <button>Update</button>
+        <form>
+            <p>Screen-Color</p>
+            <p>Screen-Position</p>
+            <div class="position_img">
+                <button><img src="z" width="80px"></button>
+                <button><img src="" width="80px"></button>
+                <button><img src="" width="80px"></button>
+            </div>
+            <p>Banner-Picture</p>
+            <p id="picture_size">*** We recommend 1960*140px for the size of the picture. ***</p>
+            <input type="file">
+        </form>
     </div>
     <h1>Photo Diary</h1>
     <div class="menu_s">
@@ -43,7 +50,7 @@
     </div>
     <button id="Menu" onclick="MENU()">Menu</button>
     <div class="screen">
-        <div class="grid">
+        <div class="screen_grid">
             <div class="Calender">
                 calendar
             </div>

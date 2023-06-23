@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Diary Write</title>
+    <style>
+        .picture_img{
+            padding: 10px;
+        }
+        .picture_grid{
+            display: grid;
+            grid-template-columns: 48% 4% 48%;
+        }
+        .picture_img img{
+            border: 2px solid rgb(105, 20, 180);
+            border-radius: 10px;
+            padding: 5px;
+        }
+        #picture_button{
+            border: 1px solid rgb(105, 20, 180);
+            border-radius: 10px;
+            padding: 3px;
+            font-size: 13px;
+        }
+        .picture_button{
+            margin: 5px;
+        }
+        .Writing_place{
+            padding: 10px;
+        }
+        #writing_place{
+            width: 100%;
+            height: 100%;
+            min-height: 100px;
+            border: 2px solid rgb(105, 20, 180);
+            border-radius: 10px;
+        }
+        @media(max-width:700px) {
+            .picture_grid{
+                display: grid;
+                grid-template-columns: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="picture_grid">
+        <div class="picture_img">
+            <img src="cover.jpg" width="100%">
+            <div>
+                <label for="uploading_picture" id="picture_button">Picture Uploading</label>
+                <input type="file" id="uploading_picture" style="display: none;">
+            </div>
+        </div>
+        <div></div>
+        <div class="Writing_place">
+            <input type="text" id="writing_place">
+        </div>
+    </div>
+</body>
+</html>

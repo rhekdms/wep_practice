@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" style="width: 100%;">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,65 +16,96 @@
     ondragstart="return false" >
     <img src="cycle.png" width="40px"></button>
     <div class="setup">
-        <div class="setup_grid">
-            <p id="SetUp">Set-Up</p>
-            <button id="Set_update">Update</button>
+        <p id="SetUp">Set-Up</p>
+        <p>Screen-Position</p>
+        <div class="position_img">
+            <input type="image" src="Abc.png">
+            <input type="image" src="Abc2.png">
+            <input type="image" src="Abc3.png">
         </div>
-        <form>
-            <p>Screen-Color</p>
-            <p>Screen-Position</p>
-            <div class="position_img">
-                <button><img src="z" width="80px"></button>
-                <button><img src="" width="80px"></button>
-                <button><img src="" width="80px"></button>
-            </div>
-            <p>Banner-Picture</p>
-            <p id="picture_size">*** We recommend 1960*140px for the size of the picture. ***</p>
-            <input type="file">
-        </form>
+        <p>Banner-Picture</p>
+        <p id="picture_size">*** We recommend 1960*140px for the size of the picture. ***</p>
+        <div class="banner">
+            <label for="banner">choice</label>
+            <input type="file" id="banner" style="display: none;">
+            <input id="upload-name" value="" disabled="disabled" >
+        </div>
     </div>
-    <h1>Photo Diary</h1>
+    <h1 onclick="PHOTO_DIARY()">Photo Diary</h1>
     <div class="menu_s">
-        <p id="Write">Write</p>
+        <p id="Write" onclick="WRITE()">Write</p>
         <p id="Memory" onclick="MEMORY()">Memory</p>
         <div class="Memory">
-            <p id="OnlyPicture">Only-Picture</p>
-            <p id="OnlyWriting">Only-Writing</p>
-            <p id="Picture_n_Writing">Picture & Writing</p>
+            <p id="OnlyPicture" onclick="ONLY_PICTURE()">Only-Picture</p>
+            <p id="OnlyWriting" onclick="ONLY_WRITING()">Only-Writing</p>
+            <p id="Picture_n_Writing" onclick="PICTURE_N_WRITING()">Picture & Writing</p>
         </div>
         <p id="Remember" ondblclick="REMEMBER()">Remember</p>
         <div class="Remember">
-            <p id="Memo">Memo</p>
-            <p id="To_Do">To Do</p>
+            <p id="Memo" onclick="MEMO()">Memo</p>
+            <p id="To_Do" onclick="TO_DO()">To-Do</p>
         </div>
     </div>
     <button id="Menu" onclick="MENU()">Menu</button>
     <div class="screen">
         <div class="screen_grid">
             <div class="Calender">
-                calendar
+                <h2>calendar</h2>
+                <div id='calender'></div>
             </div>
-            <div class="Memo">
-                memo
-            </div>
-            <div class="To_Do">
-                to do
+            <div class="screen_grid_2">
+                <div class="Memo">
+                    <h2>memo</h2>
+                    <div id='memo'></div>
+                </div>
+                <div class="To_Do">
+                    <h2>to do</h2>
+                    <div id='to_do'></div>
+                </div>
             </div>
         </div>
         <div class="Write">
-            write
+            <h2>write</h2>
+            <div id='write'></div>
         </div>
         <div class="Picture_n_writing">
             <div class="OnlyPicture">
-                picture
+                <h2>picture</h2>
+                <div id='picture'></div>
             </div>
             <div class="OnlyWriting">
-                writing
+                <h2>writing</h2>
+                <div id='writing'></div>
             </div>
         </div>
     </div>
+    <p id="reserved">
+        ⓒ 2023 By Daeun. All Rights Reserved.
+    </p>
 </body>
 <script>
+    $(function(){
+        $('#calender').load("calender.html");
+    });
 
+    $(function(){
+        $('#memo').load("memo.html");
+    });
+
+    $(function(){
+        $('#to_do').load("todo.html");
+    });
+
+    $(function(){
+        $('#write').load("write.html");
+    });
+
+    $(function(){
+        $('#picture').load("picture.html");
+    });
+    
+    $(function(){
+        $('#writing').load("writing.html");
+    });
 </script>
 </html>

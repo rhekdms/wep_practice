@@ -1,6 +1,11 @@
+html{
+    background-color: #d0bdf2;
+    height: 927px;
+}
 body{
+    max-width: 1000px;
     position: relative;
-    margin: 0;
+    margin: 0 auto;
     color: rgb(140, 45, 225);
     background-color: rgb(245, 230, 245);
 }
@@ -29,11 +34,13 @@ body{
     padding-bottom: 18px;
     display: none;
 }
-.setup button{
+.setup input, #Set_update{
     border: rgb(105, 20, 180) solid 1px;
-    background-color: white;
+    background-color: rgba(255, 255, 255);
     border-radius: 10px;
     color: rgb(105, 20, 180);
+    opacity: 0.8;
+    padding: 2px;
 }
 .setup p{
     font-size: 20px;
@@ -41,21 +48,14 @@ body{
     border-top: dashed 2px;
 }
 #SetUp{
-    display: inline;
     border: none;
     font-size: 25px;
     font-weight: 700;
+    padding-bottom: 10px;
 }
-.setup button{
-    background-color: rgba(255, 255, 255, 0.5);
-}
-#Set_update{
-    height: 20px;
-    margin: auto;
-}
-.setup_grid{
-    display: grid;
-    grid-template-columns: 1fr 60px;
+.position_img input{
+    opacity: 0.7;
+    width: 95px;
 }
 .position_img{
     margin-bottom: 5px;
@@ -64,6 +64,19 @@ body{
     font-size: 12px;
     padding-bottom: 5px;
     border: none;
+}
+.banner label{
+    background-color: white;
+    border: solid 1px rgb(105, 20, 180);
+    padding: 3px;
+    border-radius: 10px;
+}
+#upload-name{
+    text-align: center;
+    overflow: hidden;
+    padding: 2px;
+    width: 250px;
+    height: 22px;
 }
 h1{
     position: relative;
@@ -76,7 +89,7 @@ h1{
     padding-bottom: 35px;
     border-bottom: rgb(105, 20, 180) solid 2px;
     background-image: url(cover.jpg);
-    background-size: 1920px 140px;
+    background-size: 1000px 132px;
     background-position: center;
     margin-bottom: -15px;
 }
@@ -151,42 +164,72 @@ p{
 }
 .screen{
     margin-top: 10px;
+    margin-bottom: 10px;
+    display: block;
 }
-.Calender{
+.screen_grid{
+    display: grid;
+    grid-template-columns: 60% 1fr;
+}
+@media(max-width:700px) {
+    .screen_grid{
+        display: grid;
+        grid-template-columns: none;
+    }
+}
+.screen_grid_2{
+    display: grid;
+    grid-template-rows: 50% 1fr;
+}
+h2{
+    margin: 0;
     display: inline;
+    border-bottom: solid 2px;
+    border-right: solid 1px;
+    padding: 7px;
+    border-bottom-right-radius: 10px;
+}
+.Calender, .Memo, .To_Do{
+    display: block;
     border: solid rgb(105, 20, 180) 2px;
     background-color: white;
     border-radius: 10px;
     margin: 2px;
     padding: 5px;
+    overflow: hidden;
 }
-.Memo{
-    display: inline;
+.Write, .OnlyPicture,.OnlyWriting{
+    display: none;
     border: solid rgb(105, 20, 180) 2px;
     background-color: white;
     border-radius: 10px;
     margin: 2px;
     padding: 5px;
+    overflow: hidden;
 }
-.To_Do{
-    display: inline;
-    border: solid rgb(105, 20, 180) 2px;
-    background-color: white;
-    border-radius: 10px;
-    margin: 2px;
-    padding: 5px;
-}
-.Write{
-    display: none;
-}
-.OnlyPicture{
-    display: none;
-}
-.OnlyWriting{
-    display: none;
+#calender, #memo, #to_do, #write, #picture, #writing{
+    margin: 15px;
 }
 
+#reserved{
+    background-color: #b088ec;
+    color: white;
+    font-size: 11px;
+    padding: 6px;
+}
 /* hover */
+#Set_update:hover{
+    opacity: 1;
+    border: 2px solid ;
+}
+.position_img input:hover{
+    opacity: 1;
+    border: 2px solid ;
+}
+.banner label:hover{
+    opacity: 1;
+    border: 2px solid ;
+}
 #Write:hover{
     padding-top: 20px;
     margin-bottom: -20px;

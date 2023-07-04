@@ -88,6 +88,7 @@ h1{
     padding-top: 35px;
     padding-bottom: 35px;
     border-bottom: rgb(105, 20, 180) solid 2px;
+    background-color: rgb(245, 230, 245);
     background-image: url(cover.jpg);
     background-size: 1000px 132px;
     background-position: center;

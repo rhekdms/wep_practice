@@ -112,3 +112,9 @@ function SCREEN_POSITION_2(){
     document.querySelector('.screen_grid_2').style.gridTemplateColumns='none';
     document.querySelector('.screen_grid_2').style.gridTemplateRows='50% 1fr';
 }
+/** banner */
+function BANNERNAME(){
+    Banner = document.getElementById('banner').files[0].name
+    console.log(Banner);
+    document.querySelector('h1').style.backgroundImage='url("'+Banner+'")';
+}

@@ -27,7 +27,7 @@
         <p id="picture_size">*** We recommend 1960*140px for the size of the picture. ***</p>
         <div class="banner">
             <label for="banner">choice</label>
-            <input type="file" id="banner" style="display: none;">
+            <input type="file" id="banner" style="display: none;" onchange="BANNERNAME()">
             <input id="upload-name" value="" disabled="disabled" >
         </div>
     </div>
@@ -107,5 +107,8 @@
     $(function(){
         $('#writing').load("writing.html");
     });
+    function BANNERNAME(){
+        alert(document.getElementById('banner').file.name);
+    }
 </script>
 </html>

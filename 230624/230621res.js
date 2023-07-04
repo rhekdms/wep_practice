@@ -1,3 +1,4 @@
+/* open & close */
 function SETUP(){
     if(document.querySelector('.setup').style.display==='block'){
         document.querySelector('.setup').style.display='none';
@@ -74,6 +75,8 @@ function MEMO(){
     document.querySelector('.To_Do').style.display='none';
     document.querySelector('.Memo').style.display='block';
     document.querySelector('.Calender').style.display='none';
+    document.querySelector('.screen_grid_2').style.display='block';
+    document.querySelector('.screen_grid').style.display='block';
 }
 
 function TO_DO(){
@@ -83,6 +86,8 @@ function TO_DO(){
     document.querySelector('.To_Do').style.display='block';
     document.querySelector('.Memo').style.display='none';
     document.querySelector('.Calender').style.display='none';
+    document.querySelector('.screen_grid_2').style.display='block';
+    document.querySelector('.screen_grid').style.display='block';
 }
 function PHOTO_DIARY(){
     document.querySelector('.Write').style.display='none';
@@ -91,4 +96,19 @@ function PHOTO_DIARY(){
     document.querySelector('.To_Do').style.display='block';
     document.querySelector('.Memo').style.display='block';
     document.querySelector('.Calender').style.display='block';
+    document.querySelector('.screen_grid_2').style.display='grid';
+    document.querySelector('.screen_grid').style.display='grid';
+}
+
+/* screen-position */
+function SCREEN_POSITION_1(){
+    document.querySelector('.screen_grid').style.gridTemplateColumns='60% 1fr';
+    document.querySelector('.screen_grid_2').style.gridTemplateColumns='none';
+    document.querySelector('.screen_grid_2').style.gridTemplateRows='50% 1fr';
+}
+
+function SCREEN_POSITION_2(){
+    document.querySelector('.screen_grid').style.gridTemplateColumns='60% 1fr';
+    document.querySelector('.screen_grid_2').style.gridTemplateColumns='none';
+    document.querySelector('.screen_grid_2').style.gridTemplateRows='50% 1fr';
 }

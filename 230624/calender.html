@@ -10,19 +10,24 @@
             font-size: 30px;
             font-weight: 900;
             margin-bottom: 10px;
+            margin-top: -40px;
         }
         .date{
             margin-bottom: 20px;
             text-align: center;
         }
         .date-month{
-            margin-bottom: 30px;
-            margin: 0 auto;
+            margin-bottom: 0;
+            width: 100%;
+            height: 100%;
+        }
+        tr{
+            display: grid;
+            grid-template-columns: 14% 14% 14% 14% 14% 14% 14%;
         }
         td{
-            width: 60px;
-            height: 100px;
             vertical-align: top;
+            min-height: 70px;
         }
         .button_wrap{
             display: inline;
@@ -39,6 +44,10 @@
         a{
             font-size: 20px;
         }
+        .tbl-month{
+            display: grid;
+            grid-template-rows: 16% 16% 16% 16% 16% 0%;
+        }
     </style>
 </head>
 <body>
@@ -51,7 +60,7 @@
             </div>
         </div>
         <table class="date-month">
-            <thead>
+            <thead class="tbl-month">
                 <tr>
                     <th>일</th>
                     <th>월</th>
@@ -62,8 +71,7 @@
                     <th>토</th>
                 </tr>
             </thead>
-            <tbody id="tbl-month">
-                <tr>
+                <tr class="week1">
                     <td class="sun"><a></a></td>
                     <td class="mon"><a></a></td>
                     <td class="tue"><a></a></td>
@@ -72,7 +80,7 @@
                     <td class="fri"><a>2</a></td>
                     <td class="sat"><a>3</a></td>
                 </tr>
-                <tr>
+                <tr class="week2">
                     <td class="sun"><a>4</a></td>
                     <td class="mon"><a>5</a></td>
                     <td class="tue"><a>6</a></td>
@@ -81,7 +89,7 @@
                     <td class="fri"><a>9</a></td>
                     <td class="sat"><a>10</a></td>
                 </tr>
-                <tr>
+                <tr class="week3">
                     <td class="sun"><a>11</a></td>
                     <td class="mon"><a>12</a></td>
                     <td class="tue"><a>13</a></td>
@@ -90,7 +98,7 @@
                     <td class="fri"><a>16</a></td>
                     <td class="sat"><a>17</a></td>
                 </tr>
-                <tr>
+                <tr class="week4">
                     <td class="sun"><a>18</a></td>
                     <td class="mon"><a>19</a></td>
                     <td class="tue"><a>20</a></td>
@@ -99,7 +107,7 @@
                     <td class="fri"><a>23</a></td>
                     <td class="sat"><a>24</a></td>
                 </tr>
-                <tr>
+                <tr class="week5">
                     <td class="sun"><a>25</a></td>
                     <td class="mon"><a>26</a></td>
                     <td class="tue"><a>27</a></td>
@@ -108,7 +116,6 @@
                     <td class="fri"><a>30</a></td>
                     <td class="sat"><a></a></td>
                 </tr>
-            </tbody>
         </table>
     </div>
 </body>

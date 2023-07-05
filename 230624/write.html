@@ -47,10 +47,10 @@
 <body>
     <div class="picture_grid">
         <div class="picture_img">
-            <img src="cover.jpg" width="100%">
+            <img id="picture_uploaded" src="cover.jpg" width="100%">
             <div>
                 <label for="uploading_picture" id="picture_button">Picture Uploading</label>
-                <input type="file" id="uploading_picture" style="display: none;">
+                <input type="file" id="uploading_picture" style="display: none;" onchange="PICTURE_UPLOAD()">
             </div>
         </div>
         <div></div>
@@ -59,4 +59,10 @@
         </div>
     </div>
 </body>
+<script>
+    function PICTURE_UPLOAD(){
+        Picture_uploaded = document.getElementById('uploading_picture').files[0].name
+        document.getElementById('picture_uploaded').src=Picture_uploaded;
+    }
+</script>
 </html>

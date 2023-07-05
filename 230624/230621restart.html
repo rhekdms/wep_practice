@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to my space!!</title>
-    <link rel="stylesheet" href="230621re.css">
+    <link id="styles" rel="stylesheet" href="230621re.css">
     <script src="230621res.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
@@ -19,9 +19,9 @@
         <p id="SetUp">Set-Up</p>
         <p>Screen-Position</p>
         <div class="position_img">
-            <input type="image" src="Abc.png">
-            <input type="image" src="Abc2.png">
-            <input type="image" src="Abc3.png">
+            <input type="image" src="Abc.png" onclick="SCREEN_POSITION_1()">
+            <input type="image" src="Abc2.png" onclick="SCREEN_POSITION_2()">
+            <input type="image" src="Abc3.png" onclick="">
         </div>
         <p>Banner-Picture</p>
         <p id="picture_size">*** We recommend 1960*140px for the size of the picture. ***</p>
@@ -55,11 +55,11 @@
             </div>
             <div class="screen_grid_2">
                 <div class="Memo">
-                    <h2>memo</h2>
+                    <h2 onclick="MEMO()">memo</h2>
                     <div id='memo'></div>
                 </div>
                 <div class="To_Do">
-                    <h2>to do</h2>
+                    <h2 onclick="TO_DO()">to do</h2>
                     <div id='to_do'></div>
                 </div>
             </div>

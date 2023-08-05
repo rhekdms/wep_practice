@@ -1,14 +1,11 @@
 function f(n){
     $(function(){
         $('#screen_change').load(n);
+        document.querySelector('#back').style.display='block';
     });}
 
-function OPEN(a){
-    if(document.querySelector(a).style.display==='block'){
-        document.querySelector('.menu_s').style.display='none';
-        document.querySelector('.Memory').style.display='none';
-        document.querySelector('.Remember').style.display='none';
-    } else {
-        document.querySelector('.menu_s').style.display='block';
-    }
-}
+function BACK(){
+    $(function(){
+        $('#screen_change').load('start.html');
+        document.querySelector('#back').style.display='none';
+    });}

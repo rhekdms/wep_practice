@@ -28,18 +28,26 @@ h1{
     padding: 20px;
     padding-top: 0;
 }
-#back{
-    display: none;
+.back{
+    display: block;
     position: absolute;
     margin: 0;
-    padding: 8px;
-    padding-left: 7px;
-    padding-bottom: 23px;
-    background-image: url(bookkeeper.png);
-    background-size: 35px 80px;
-    writing-mode: vertical-lr;
-    text-orientation: upright;
-    color: white;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+}
+.back p{
+    margin: 0;
+}
+.back span{
+    background: linear-gradient(to left,
+     rgb(180, 180, 180) 5%,
+      rgba(255, 255, 255, 0.5) 50%,
+      rgba(255, 255, 255, 0));
+    margin: 0;
+    padding-right: 15px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    padding-left: 10px;
 }
 #back:hover{
     padding-top: 12px;

@@ -24,5 +24,6 @@
 *.jpg
 *.png
 *.txt
+.db
 /img
 /video

@@ -49,11 +49,19 @@ Title - Home
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                ...
+                <!-- 메모 수정 란 -->
+                <div class="form-floating">
+                    <input name="note-title" type="text" class="form-control" id="update-title" placeholder="name@example.com">
+                    <label for="note-title">Title</label>
+                </div>
+                <div class="form-floating">
+                    <textarea name="note-content" class="form-control" placeholder="Leave a content here" id="update-content"></textarea>
+                    <label for="note-content">Content</label>
+                </div>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">취소</button>
-                <button type="button" class="btn btn-primary">변경</button>
+                <button type="button" class="btn btn-primary" onclick="updateNote()">변경</button>
             </div>
         </div>
     </div>

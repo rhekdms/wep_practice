@@ -1,0 +1,110 @@
+html{
+    height: 100%;
+    background: linear-gradient(
+            to bottom,
+            rgba(255, 255, 255, 0) 7vw,
+            rgba(255, 255, 255, 0.5) 15vw,
+            rgb(255, 255, 255) 65vw,
+            rgb(255, 255, 255) 100%
+          ), url('head.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    overflow: auto;
+}
+
+body{
+    margin: 0;
+    height: 100%;
+    overflow: auto;
+}
+
+h1{
+    text-align: center;
+    font-size: 6vw;
+    margin: 0;
+    width: 100%;
+    padding-top: 7vw;
+    padding-bottom: 100px;
+}
+
+#screen_change{
+    padding: 20px;
+    padding-top: 0;
+}
+
+.study, .club, .etc{
+    display: flex;
+}
+
+.study h2, .club h2, .etc h2{
+    border-right: dashed white;
+    margin: 0;
+    padding: 10px;
+}
+
+.study_2 p, .club_2 p, .etc_2 p{
+    font-size: 2vw;
+    text-align: center;
+}
+
+.study_2, .club_2, .etc_2{
+    display: block;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.main_grid{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.main_grid h2{
+    writing-mode: none;
+    text-align: center;
+}
+.main_grid h2{
+    font-size: 3vw;
+}
+
+#menu{
+    font-weight:900;
+    font-size: 30px;
+    margin: 0;
+
+}
+
+
+
+@media(max-width:900px) {
+    h1{
+        font-size: 53px;
+        padding-top: 62px;
+    }
+    .main_grid{
+        display: block;
+        justify-content: space-evenly;
+    }
+    .study, .club, .etc{
+        display: grid;
+        grid-template-columns: 50% 1fr;
+        margin-bottom: 30px;
+    }
+    .main_grid h2{
+        display: flex;
+        justify-content: center;
+    }
+    .study_2, .club_2, .etc_2{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+@media(max-width:1000px) {
+    .main_grid h2{
+        font-size: 30px;
+    }
+    .study_2 p, .club_2 p, .etc_2 p{
+        font-size: 18px;
+        text-align: center;
+    }
+}

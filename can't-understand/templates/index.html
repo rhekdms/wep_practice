@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}대학 생활 활동 내역{% endblock %}</title>
+    <link id="styles" rel="stylesheet" href="{{ url_for('static', filename='index.css')}}">
+</head>
+<body>
+    <h1 id="title1"><a href="/">대학 생활 활동 내역</a></h1>
+    <div class="container">
+        {% block content %}
+        <div class="main_grid">
+            <div class="study">
+                <h2>수업</h2>
+                <div class="study_2">
+                    <p><a href="/class-1grade">1학년</a></p>
+                    <p><a>2학년</a></p>
+                    <p><a>3학년</a></p>
+                    <p><a>4학년</a></p>
+                </div>
+            </div>
+            <div class="club">
+                <h2>동아리 활동</h2>
+                <div class="club_2">
+                    <p>알고리즘</p>
+                    <p>웹</p>
+                    <p>게임 개발</p>
+                    <p>옴니버스</p>
+                </div>
+            </div>
+            <div class="etc">
+                <h2>기타 활동</h2>
+                <div class="etc_2">
+                    <p>그림</p>
+                    <p>여행</p>
+                    <p>기타</p>
+                </div>
+            </div>
+        </div>
+        {% endblock %}
+    </div>
+    <script src="{{ url_for('static', filename='index.js')}}"></script>
+</body>
+</html>
